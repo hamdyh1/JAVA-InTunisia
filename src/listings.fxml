@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="reviewsPane" prefHeight="450.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListingsController">
+    <children>
+        <VBox layoutX="27.0" layoutY="73.0" prefHeight="220.0" prefWidth="145.0" spacing="20.0">
+            <children>
+                <Label fx:id="listing_id" text="Id: ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="listing_name" layoutX="10.0" layoutY="10.0" text="Name:">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="listing_user" layoutX="10.0" layoutY="10.0" text="User ID:">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="listing_status" layoutX="10.0" layoutY="26.0" text="Status:">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="listing_visit" layoutX="10.0" layoutY="42.0" text="Visit Number:">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            <Label fx:id="listing_email" layoutX="10.0" layoutY="170.0" text="Email:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="listing_phone" layoutX="10.0" layoutY="210.0" text="Phone:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="175.0" layoutY="65.0" prefHeight="226.0" prefWidth="194.0" spacing="14.0">
+            <children>
+                <TextField fx:id="tf_listing_id" />
+                <TextField fx:id="tf_listing_name" layoutX="10.0" layoutY="10.0" />
+                <TextField fx:id="tf_listing_user" layoutX="10.0" layoutY="10.0" />
+                <TextField fx:id="tf_listing_status" layoutX="10.0" layoutY="36.0" />
+            <TextField fx:id="tf_listing_visit" layoutX="10.0" layoutY="130.0" />
+            <TextField fx:id="tf_listing_email" layoutX="10.0" layoutY="170.0" />
+            <TextField fx:id="tf_listing_phone" layoutX="10.0" layoutY="210.0" />
+            </children>
+        </VBox>
+
+        <TableView fx:id="tv_listing" layoutX="444.0" layoutY="43.0" prefHeight="339.0" prefWidth="660.0">
+            <columns>
+                <TableColumn fx:id="col_listing_id" prefWidth="61.0" text="Id" />
+                <TableColumn fx:id="col_listing_name" prefWidth="104.0" text="Name" />
+                <TableColumn fx:id="col_listing_user" prefWidth="81.0" text="User ID" />
+                <TableColumn fx:id="col_listing_status" prefWidth="69.0" text="Status" />
+                <TableColumn fx:id="col_listing_visits" prefWidth="102.0" text="Visit Number" />
+                <TableColumn fx:id="col_listing_email" prefWidth="132.0" text="Email" />
+            <TableColumn fx:id="col_listing_phone" prefWidth="110.0" text="Phone" />
+            </columns>
+        </TableView>
+        <Button fx:id="btn_listing_ins" layoutX="64.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Insert" />
+        <Button fx:id="btn_listing_del" layoutX="259.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+        <Button fx:id="btn_listing_upd" layoutX="162.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+        <Button fx:id="back" layoutX="1063.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <TextField fx:id="filterField" layoutX="862.0" layoutY="8.0" />
+        <Button fx:id="search" layoutX="1040.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Search" />
+        
+          <VBox fx:id="cosa" layoutX="32.0" layoutY="68.0" prefHeight="394.0" 
+      prefWidth="704.0">
+      <children>
+         <BorderPane fx:id="borderPanel" prefHeight="400.0" 
+             prefWidth="704.0" />
+      </children>
+     </VBox>
+     
+    </children>
+</AnchorPane>

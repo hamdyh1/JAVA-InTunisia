@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javaCrud.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javacrud.jnlp">
   <information>
-    <title>javaCrud</title>
-    <vendor>hamdy</vendor>
+    <title>javacrud</title>
+    <vendor>sarim.rafique</vendor>
     <description>null</description>
     <offline-allowed/>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="javaCrud.jar" size="2250700" download="eager" />
-    <jar href="lib\mysql-connector-java-8.0.19.jar" size="2356711" download="eager" />
+    <jar href="javacrud.jar" size="2251018" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="javaCrud" >
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="javacrud" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="javacrud.JavaCrud"  name="javaCrud" />
+  <jfx:javafx-desc  width="800" height="600" main-class="Main"  name="javacrud" />
   <update check="always"/>
 </jnlp>
